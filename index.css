@@ -223,13 +223,13 @@ a.prev > img, a.next > img{
 }
 a.prev {
     border-radius: 0 2px 2px 0;
-    transform: translate(-35%,-150%);
+    transform: translate(-35%,110%);
 }
 
 a.next {
     right: 0;
     border-radius: 2px 0 0 26px;
-    transform: translate(35%,-150%);
+    transform: translate(35%,110%);
 
 }
 /*
