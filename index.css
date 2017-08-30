@@ -203,7 +203,7 @@ body  div:first-of-type{
 a.prev, a.next {
     position: absolute;
     top: 40%;
-    z-index: 999;
+    z-index: 9;
     display: block;
     padding: 4% 3%;
     width: auto;
