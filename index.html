@@ -7,7 +7,10 @@
     <link href="index.css" rel="stylesheet" type="text/css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
 </head>
 
 
@@ -20,20 +23,21 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <!--<li><a href="#">Wow</a></li> -->
                 </ul>
         </div>
     </div>
 
 </header>
 <body>
-    <div class ='section' id="parent">
+    <div class ='section' >
         <img src="resources/main.jpg" id ='main'>
+
     </div>
     <div class='section' id="about">
         <p><b>Burritos Mexican Grill</b> is a fresh alternative to St. John's quick service restaurant industry.</p>
 
         <p>Locally owned and operated, we have a vision of creating a taste that is unique to our signature spices and marinades while drawing on the Tex Mex flavors that people know and love.</p>
+
     </div>
     <div class="section" id="menu">
 
@@ -47,22 +51,33 @@
                 <li><img src="resources/menu4.jpg"></li>
             </ul>
         </div>
-        <p> Click the peppers to see more!  <img src="resources/left.png"></p>
+        <p> Click the peppers to see more! <img src="resources/left.png"></p>
 
     </div>
-    <div class="section" id ="contact">
-        <ul class='hours'>
-            <li><p>Monday</p> <p>11:00 - 22:00</p></li>
-            <li><p>Tuesday</p><p>11:00 - 22:00</p></li>
-            <li><p>Wednesday</p><p>11:00 - 22:00</p></li>
-            <li><p>Thursday</p><p>11:00 - 22:00</p></li>
-            <li><p>Friday</p><p>11:00 - 22:00</p></li>
-            <li><p>Saturday</p><p>11:00 - 22:00</p></li>
-            <li><p>Sunday</p><p>11:00 - 22:00</p></li>
+    <div class="section" id="contact">
 
-        </ul>
+        <div id="mapouter">
+            <div class="gmap_canvas">
+                <iframe width="400" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Burritos%20Mexican%20Grill%2C%20Topsail%20Road%2C%20St.%20John's%2C%20NL%2C%20Canada&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+            </div>
+            <style>.mapouter{ text-align: center;overflow:hidden;height:400px;width:400px;}.gmap_canvas {background:none!important;height:400px;width:400px;}</style>
+        </div>
 
+        <div id="main2">
+            <div id="darkBack"></div>
+            <div id="timeDiv"></div>
+            </div>
     </div>
+
+
+
+
+
+
+
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 </body>
 <footer>
     <div class="section">

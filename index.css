@@ -6,9 +6,7 @@ body {
     width: 100%;
 }
 *{
-    font-size: 20px;
     font-family: "Open Sans", Helvetica, sans-serif;
-
 }
 
 .section {
@@ -20,8 +18,10 @@ body {
     width: 100%;
     margin: 0 auto;
     font-weight: 300;
-    overflow: hidden;
-
+    overflow: auto;
+}
+header >.section > .container{
+    overflow:hidden;
 }
 
 ul.nav {
@@ -44,7 +44,7 @@ ul.nav li a {
     font-style: normal;
     font-weight: bolder;
     text-transform: uppercase;
-    font-family: 'Patua One', cursive;
+    font-family: 'Patua One', cursive !important;
 
 }
 
@@ -119,8 +119,9 @@ body  div:first-of-type{
     padding-top: 110px;
     background: rgba(245, 92, 58, 0.97);
     padding-bottom: 100px;
-    float: left;
+    display: inline-block;
     box-shadow: 1px 1px 10px 5px rgba(155, 41, 5, 0.57);
+    font-size: 20px;
 }
 #about p:first-of-type{
     text-align: center;
@@ -132,7 +133,6 @@ body  div:first-of-type{
     text-align: center;
     width:50%;
     padding-top: 30px;
-    margin: 0;
     padding-bottom: 30px;
     margin: auto;
 }
@@ -168,7 +168,8 @@ body  div:first-of-type{
 }
 #menu > p{
     text-align: center;
-    font-size: 12pt;
+    font-size: 14pt;
+    font-weight: bolder;
 }
 #menu > p > img{
     width: 2%;
@@ -236,10 +237,102 @@ a.next {
     Contact
  */
 #contact{
-    background-color: #f5f1c9;
-    box-shadow: 1px 1px 10px 5px rgba(255, 65, 11, 0.84);
-    float: left;
+    background: rgba(245, 170, 56, 0.97);
+    box-shadow: 1px 1px 10px 5px rgba(221, 149, 55, 0.81);
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    overflow: auto;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+#mapouter{
+    display: inline-block;
+    width: 100%;
+}
+#mapouter .gmap_canvas{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+#mapouter > .gmap_canvas > #gmap_canvas{
+    text-align: center;
+    width: 100%;
+}
+#main2{
+    text-align: center;
+    width: 100%;
+}
+.modal-overlay{
+    display: block;
+    position: relative;
+    width: 100%;
+   overflow: auto;
+}
+
+#darkBack {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.75);
+    width: 100%;
+}
+
+#timeDiv {
+    font-size: 15px;
+    text-transform: uppercase;
+    position: relative;
+    max-width: 325px;
+    background: #fff;
+    width: 85%;
+    margin: 0 auto;
+    top: 50%;
+    padding: 10px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 8px 16px -8px #adadad;
+    -moz-box-shadow: 0 8px 16px -8px #adadad;
+    box-shadow: 0 8px 16px -8px #adadad;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 600;
+    text-align: center;
+}
+
+.open {
+    color: #27ae60;
+    border: 2px solid #27ae60;
+}
+.closed {
+    color: rgba(231, 76, 60, 0.85);
+    border: 2px solid rgba(231, 76, 60, 0.8);
+}
+@media all and (max-width: 600px) {
+    #timeDiv {
+        margin-bottom: 20px;
+    }
+}
+
+@media all and (min-width: 601px) {
+    #timeDiv {
+        margin-right: 15px;
+    }
+}
+
+
+
+@media all and (max-height: 420px) {
+    #timeDiv, .viewOpen {
+        top: 60%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /*
     Footer
  */
@@ -249,8 +342,7 @@ footer{
     margin: 0;
     width: 100%;
     overflow: auto;
-    border-top: solid;
-    border-width: thin;
+    box-shadow: 1px 1px 10px 5px rgba(255, 65, 11, 0.81);
 }
 footer > .section {
     width: 100%;
